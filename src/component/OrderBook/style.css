@@ -1,0 +1,27 @@
+.orderbook {
+  padding-left: 1rem;
+}
+
+.head {
+  color: gray;
+}
+
+.currency {
+  background-color: rgb(183, 178, 178);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.body {
+    margin-top: 1rem;
+}
+
+.bid-price {
+    color: red;
+    font-weight: 600;
+}
+
+.ask-price {
+    color: green;
+    font-weight: 600;
+}
