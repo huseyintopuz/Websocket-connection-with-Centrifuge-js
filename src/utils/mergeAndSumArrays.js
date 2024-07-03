@@ -2,7 +2,6 @@ export const mergeAndSumArrays = (arrays) => {
   const askMap = new Map();
 
   arrays.forEach(([price, amount]) => {
-    // console.log(price, amount);
     price = parseFloat(price);
     amount = parseFloat(amount);
     if (!isNaN(amount) && amount !== 0) {
