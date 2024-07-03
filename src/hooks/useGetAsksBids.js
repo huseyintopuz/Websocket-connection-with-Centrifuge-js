@@ -14,8 +14,7 @@ export const useGetAsksBids = () => {
         setBids((prevBids) => {
           const newBids = mergeAndSumArrays([...prevBids, ...orderbookData.bids])
             .sort((a, b) => b[0] - a[0])
-            // .filter((bid) => bid[1] > 0)
-            .slice(0, 11); // Keep only top 11
+            .slice(0, 11);
           return newBids;
         });
       }
@@ -23,9 +22,8 @@ export const useGetAsksBids = () => {
       if (orderbookData.asks) {
         setAsks((prevAsks) => {
           const newAsks = mergeAndSumArrays([...prevAsks, ...orderbookData.asks])
-            .sort((a, b) => a[0] - b[0]) // Sort by price ascending
-            // .filter((ask) => ask[1] > 0)
-            .slice(0, 11); // Keep only top 11
+            .sort((a, b) => a[0] - b[0])
+            .slice(0, 11);
           return newAsks;
         });
       }
